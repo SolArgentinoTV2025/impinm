@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperio Inmobiliario - Juego</title>
+    <link rel="icon" type="image/x-icon" href="E:\Imperio Inmobiliario\favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap">
+	<button id="logout">Cerrar Sesión</button>
+</head>
+<body>
+    <button id="logout">Cerrar Sesión</button>
+    <!-- Interfaz del Juego -->
+    <div id="game-interface">
+        <!-- Encabezado del Juego -->
+        <header id="game-header">
+            <h1>Imperio Inmobiliario</h1>
+            <p>El primer juego de compra, mejora, administración y venta de propiedades</p>
+        </header>
+
+        <!-- Barra de Navegación -->
+        <nav id="navbar">
+            <div class="nav-item" id="nav-home">Inicio</div>
+            <div class="nav-item" id="nav-zones">Zonas</div>
+            <div class="nav-item" id="nav-properties">Propiedades</div>
+            <div class="nav-item" id="nav-market">Mercado</div>
+            <div class="nav-item" id="nav-bank">Banco</div>
+            <div class="nav-item" id="nav-profile">Perfil</div>
+            <div class="nav-item" id="nav-info">Info</div>
+        </nav>
+        
+        <!-- Panel de Inicio -->
+        <div id="home-panel" class="panel active">
+            <h2>Bienvenido</h2>
+            <p>Explora las zonas y descubre más sobre cada una de ellas.</p>
+        </div>
+
+        <!-- Panel de Zonas -->
+        <div id="zones-panel" class="panel">
+            <h2>Explora las Zonas</h2>
+            <div id="zones-menu">
+                <div class="zone-card" id="neighborhood">
+                    <img src="path/to/neighborhood-image.webp" alt="Barrio">
+                    <h2>Barrio</h2>
+                </div>
+                <div class="zone-card" id="city">
+                    <img src="path/to/cityscape-image.webp" alt="Ciudad">
+                    <h2>Ciudad</h2>
+                </div>
+                <div class="zone-card" id="town">
+                    <img src="path/to/town-image.webp" alt="Pueblo">
+                    <h2>Pueblo</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel Principal -->
+        <div id="main-panel">
+            <!-- Panel de Propiedades -->
+            <div id="properties-panel" class="panel">
+                <h2>Tus Propiedades</h2>
+                <div id="properties-list">
+                    <!-- Las propiedades se mostrarán aquí -->
+                </div>
+                <button id="buy-property">Comprar Nueva Propiedad</button>
+            </div>
+
+            <!-- Panel del Mercado -->
+            <div id="market-panel" class="panel">
+                <h2>Mercado Inmobiliario</h2>
+                <div id="market-list">
+                    <!-- Propiedades disponibles en el mercado -->
+                </div>
+            </div>
+
+            <!-- Panel del Banco -->
+            <div id="bank-panel" class="panel">
+                <h2>Banco</h2>
+                <p>Aquí puedes gestionar tus finanzas, solicitar préstamos, y más.</p>
+                <!-- Funcionalidades bancarias -->
+            </div>
+
+            <!-- Panel del Perfil -->
+            <div id="profile-panel" class="panel">
+                <h2>Tu Perfil</h2>
+                <p>Nickname: <span id="profile-nickname"></span></p>
+                <p>Dinero: $<span id="profile-money"></span></p>
+            </div>
+
+            <!-- Panel de Información -->
+            <div id="info-panel" class="panel">
+                <h4>Información del Juego</h4>
+                <p>Bienvenido a "Imperio Inmobiliario". Aquí podrás comprar, mejorar, administrar y vender propiedades para construir tu imperio inmobiliario. Imperio Mobiliario: El Primer Juego Web de Compra, Mejora, Administración y Venta de Propiedades. Imperio Mobiliario es una innovadora experiencia de juego en línea que te sumerge en el emocionante mundo de bienes raíces. Como pionero en su formato, este juego web te ofrece la oportunidad única de construir y gestionar tu propio imperio inmobiliario desde la comodidad de tu navegador.</p>
+                <p>Crea tu imperio y hazte millonario comprando, mejorando, administrando y vendiendo casas en el mejor simulador de inmobiliaria del mundo.</p>
+                <p>Apóyanos siguiéndonos en Instagram, jugando todos los días, y compartiendo el juego con tus amigos.</p>
+                <section id="features">
+                    <h3>Características Principales</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>Compra y Venta de Propiedades:</h2>
+                            </td>
+                            <td>
+                                <p>Adquiere propiedades en diferentes ubicaciones y mercados. Aprovecha las oportunidades para vender a precios ventajosos y maximizar tus ganancias.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Mejora y Renovación:</h2>
+                            </td>
+                            <td>
+                                <p>Invierte en la renovación y mejora de tus propiedades para aumentar su valor. Desde remodelaciones simples hasta transformaciones completas, cada decisión afecta el rendimiento de tu imperio.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Administración Estratégica:</h2>
+                            </td>
+                            <td>
+                                <p>Gestiona eficientemente tu portafolio inmobiliario. Controla alquileres, maneja inquilinos y optimiza tus ingresos para construir un imperio sólido y rentable.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Experiencia Web Única:</h2>
+                            </td>
+                            <td>
+                                <p>Disfruta de un juego accesible directamente desde tu navegador. No se necesita descargar ningún software adicional, solo entra y comienza a construir tu legado inmobiliario.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+	<script>
+	document.addEventListener('DOMContentLoaded', () => {
+    const logoutButton = document.getElementById('logout');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', async () => {
+            // Lógica de cierre de sesión
+            const { error } = await supabase.auth.signOut();
+            if (error) {
+                alert('Error al cerrar sesión: ' + error.message);
+            } else {
+                window.location.
+	</script>
+</body>
+</html>

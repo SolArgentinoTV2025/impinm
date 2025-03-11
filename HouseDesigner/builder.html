@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador de Casas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2.0.2/dist/supabase.min.js"></script>
+	<style>
+	}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+#toolbox {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#toolbox h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tool {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#canvas {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    height: 600px;
+}
+
+#controls {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Diseñador de Casas</h1>
+    </header>
+    <main>
+        <aside id="toolbox">
+            <button class="tool" data-type="wall">Agregar Pared</button>
+            <button class="tool" data-type="door">Agregar Puerta</button>
+            <button class="tool" data-type="window">Agregar Ventana</button>
+            <button class="tool" data-type="furniture">Agregar Mobiliario</button>
+        </aside>
+        <section id="canvas"></section>
+        <aside id="controls">
+            <button id="save">Guardar Diseño</button>
+            <button id="publish">Publicar Diseño</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

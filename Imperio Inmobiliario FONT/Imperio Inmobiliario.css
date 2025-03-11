@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Imperio Inmobiliario Bold';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Light Oblique';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Light Oblique.otf') format('opentype');
+    font-weight: 300;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Light';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Medium Oblique';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Medium Oblique.otf') format('opentype');
+    font-weight: 500;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Medium';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Regular Oblique';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Regular Oblique.otf') format('opentype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Regular';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario SemiBold Oblique';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario SemiBold Oblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario SemiBold';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Bold Oblique';
+    src: url('E:/Imperio Inmobiliario/Imperio Inmobiliario FONT/Imperio Inmobiliario Bold Oblique.otf') format('opentype');
+    font-weight: bold;
+    font-style: oblique;
+}
