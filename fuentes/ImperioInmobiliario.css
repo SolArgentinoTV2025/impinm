@@ -1,69 +1,69 @@
 @font-face {
-    font-family: 'Imperio Inmobiliario Bold';
-    src: url('/fuentes/imperioinmobiliariobold.otf') format('opentype');
-    font-weight: 700;
+    font-family: 'Imperio Inmobiliario Light';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioLight.otf') format('opentype');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Imperio Inmobiliario Light Oblique';
-    src: url('/fuentes/imperioinmobiliariolightoblique.otf') format('opentype');
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioLightOblique.otf') format('opentype');
     font-weight: 300;
-    font-style: oblique;
-}
-
-@font-face {
-    font-family: 'Imperio Inmobiliario Light';
-    src: url('/fuentes/imperioinmobiliariolight.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Imperio Inmobiliario Medium Oblique';
-    src: url('/fuentes/imperioinmobiliariomediumoblique.otf') format('opentype');
-    font-weight: 500;
-    font-style: oblique;
-}
-
-@font-face {
-    font-family: 'Imperio Inmobiliario Medium';
-    src: url('/fuentes/imperioinmobiliariomedium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Imperio Inmobiliario Regular Oblique';
-    src: url('/fuentes/imperioinmobiliarioregularoblique.otf') format('opentype');
-    font-weight: 400;
     font-style: oblique;
 }
 
 @font-face {
     font-family: 'Imperio Inmobiliario Regular';
-    src: url('/fuentes/imperioinmobiliarioregular.otf') format('opentype');
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioRegular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Imperio Inmobiliario SemiBold Oblique';
-    src: url('/fuentes/imperioinmobiliariosemiboldoblique.otf') format('opentype');
-    font-weight: 600;
+    font-family: 'Imperio Inmobiliario Regular Oblique';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioRegularOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Medium';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Medium Oblique';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioMediumOblique.otf') format('opentype');
+    font-weight: 500;
     font-style: oblique;
 }
 
 @font-face {
     font-family: 'Imperio Inmobiliario SemiBold';
-    src: url('/fuentes/imperioinmobiliariosemibold.otf') format('opentype');
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioSemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
+    font-family: 'Imperio Inmobiliario SemiBold Oblique';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioSemiBoldOblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Imperio Inmobiliario Bold';
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Imperio Inmobiliario Bold Oblique';
-    src: url('/fuentes/imperioinmobiliarioboldoblique.otf') format('opentype');
+    src: url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliarioBoldOblique.otf') format('opentype');
     font-weight: 700;
     font-style: oblique;
 }
