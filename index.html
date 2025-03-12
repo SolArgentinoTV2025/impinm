@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperio Inmobiliario - Juego</title>
     <link rel="icon" type="image/x-icon" href="https://imperioinmobiliario.com.ar/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap">
-	<button id="logout">Cerrar Sesión</button>
-</head>
-<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&amp;display=swap">
+	</head><body style="background-image: url(&quot;https://imperioinmobiliario.com.ar/pixlr-image-generator-e65dd46f-7f62-47ba-b30f-a9e5d01d8238.png&quot;);"><button id="logout">Cerrar Sesión</button>
+
+
     <button id="logout">Cerrar Sesión</button>
     <!-- Interfaz del Juego -->
     <div id="game-interface">
@@ -31,26 +30,29 @@
         </nav>
         
         <!-- Panel de Inicio -->
-        <div id="home-panel" class="panel active">
+        <div id="home-panel" class="panel">
             <h2>Bienvenido</h2>
             <p>Explora las zonas y descubre más sobre cada una de ellas.</p>
         </div>
 
         <!-- Panel de Zonas -->
-        <div id="zones-panel" class="panel">
-            <h2>Explora las Zonas</h2>
+        <div id="zones-panel" class="panel active">
+            <h2 class="explorazonas">Explora las Zonas</h2>
             <div id="zones-menu">
                 <div class="zone-card" id="neighborhood">
                     <img src="Everwood.png" alt="Everwood">
                     <h2>Everwood</h2>
+<span class="descripcion">Everwood es la ciudad estándar, donde lo común y corriente es el pan de cada día. Aquí tendrás una vida normal.</span>
                 </div>
                 <div class="zone-card" id="city">
                     <img src="Thornfield.png" alt="Ciudad">
                     <h2>Thornfield</h2>
+<span class="descripcion">Thornfield es la ciudad de los ricos, donde el dinero, el avaro y los grandes y caros lujos son el modelo de la ciudad. Si no lo sigues, debes irte.</span>
                 </div>
                 <div class="zone-card" id="town">
                     <img src="Neon City.png" alt="Pueblo">
                     <h2>Neon City</h2>
+<span class="descripcion">Neon city es una ciudad completa de neón, donde las luces y tecnología es el principal recurso, y es no renovable, así que, debes cuidarlo si eliges vivir aquí.</span>
                 </div>
             </div>
         </div>
@@ -97,7 +99,7 @@
                 <section id="features">
                     <h3>Características Principales</h3>
                     <table>
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <h2>Compra y Venta de Propiedades:</h2>
                             </td>
@@ -129,7 +131,7 @@
                                 <p>Disfruta de un juego accesible directamente desde tu navegador. No se necesita descargar ningún software adicional, solo entra y comienza a construir tu legado inmobiliario.</p>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </section>
             </div>
         </div>

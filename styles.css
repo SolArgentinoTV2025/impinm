@@ -172,6 +172,10 @@ body {
     display: none;
 }
 
+.explorazonas {
+    text-shadow: 0.1em 0.1em 0.1em #0000008c;
+}
+
 .panel.active {
     display: block;
 }
@@ -182,32 +186,42 @@ body {
 
 #zones-menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-left: 25em;
 }
 
 .zone-card {
-    background-color: #f8f9fab4;
+    background-color: #181818;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease;
-    color: #000;
+    color: #fff !important;!i;!;!;!¿;!;
+    font-weight: 700;
+    text-align: justify;
 }
 
+.descripcion {
+    font-weight: 400;
+    text-align: justify;!;!importan;!i;!;!u;!um;!um;!u;!;!;!i;!;
+}
+
+.descripcion {}
+
 .zone-card h2 {
-    color: #000;
+    text-align: center !important;!i;!;
 }
 
 .zone-card img {
-    width: 106.9%;
-    height: 332px;
-    margin-left: -1.29em;
-    margin-top: -1.21em;
+    width: 112.4%;
+    height: 205px;
+    margin-left: -1.28em;
+    margin-top: -1.29em;
     object-fit: cover;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .zone-card h3 {
