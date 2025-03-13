@@ -1,0 +1,36 @@
+@import url("https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliario.css");
+
+.app {
+  font-family: "Imperio Inmobiliario";
+  display: flex;
+  height: 100vh;
+}
+
+* {
+  font-family: "Imperio Inmobiliario";
+}
+
+.toolbox {
+  width: 200px;
+  background: #ddd;
+  padding: 10px;
+}
+
+.designer {
+  flex-grow: 1;
+  background: #f4f4f4;
+  position: relative;
+}
+
+.room,
+.furniture {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-family: "Imperio Inmobiliario";
+}
