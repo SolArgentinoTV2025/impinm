@@ -136,18 +136,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-	<script>
-	document.addEventListener('DOMContentLoaded', () => {
-    const logoutButton = document.getElementById('logout');
-    if (logoutButton) {
-        logoutButton.addEventListener('click', async () => {
-            // Lógica de cierre de sesión
-            const { error } = await supabase.auth.signOut();
-            if (error) {
-                alert('Error al cerrar sesión: ' + error.message);
-            } else {
-                window.location.
-	</script>
+    <script src="fondo.js"></script>
 </body>
 </html>

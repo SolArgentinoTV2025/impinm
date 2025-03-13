@@ -6,7 +6,11 @@
 
 body {
     font-family: 'Imperio Inmobiliario', sans-serif;
-    background-color: #f5f5f5;
+    background-image: url('https://imperioinmobiliario.com.ar/pixlr-image-generator-e65dd46f-7f62-47ba-b30f-a9e5d01d8238.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transición suave */
     margin: 0;
     padding: 0;
     display: flex;
