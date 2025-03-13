@@ -1,55 +1,46 @@
-// Inicializa Supabase
-const { createClient } = supabase;
-const SUPABASE_URL = 'https://ownjmidkbrgkqjkomnni.supabase.co'; // URL de Supabase
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93bmptaWRrYnJna3Fqa29tbm5pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM1MTM2MTUsImV4cCI6MjAzOTA4OTYxNX0.8SFiLnh1Z3jJQwtpDIo89jUFy0M2rpoRZyuXTE5o3A4'; // Clave anónima de Supabase
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
 
-// Controlador de registro
-document.getElementById('register').addEventListener('click', async () => {
-    const email = document.getElementById('email').value;
-    const nickname = document.getElementById('nickname').value;
-    const name = document.getElementById('name').value;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
+const firebaseConfig = {
+    apiKey: "AIzaSyAlhRnpG2BOFVcfEcGUHPxNDG_kyyooF7o",
+    authDomain: "imperio-inmobiliario-3567a.firebaseapp.com",
+    projectId: "imperio-inmobiliario-3567a",
+    storageBucket: "imperio-inmobiliario-3567a.appspot.com",
+    messagingSenderId: "203816638396",
+    appId: "1:203816638396:web:34d02a5999acf321fa7db9",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+document.getElementById("register").addEventListener("click", () => {
+    const name = document.getElementById("name").value;
+    const nickname = document.getElementById("nickname").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+    const errorMessage = document.getElementById("error-message");
 
     if (password !== confirmPassword) {
-        alert('Las contraseñas no coinciden');
+        errorMessage.textContent = "Las contraseñas no coinciden.";
         return;
     }
 
-    // Registrar usuario en Supabase
-    const { error } = await supabase.auth.signUp({
-        email,
-        password
-    });
-
-    if (error) {
-        alert('Error al registrar usuario: ' + error.message);
-    } else {
-        alert('Usuario registrado con éxito. Por favor, verifica tu correo electrónico.');
-        window.location.href = 'juego.html';
-    }
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            return updateProfile(userCredential.user, {
+                displayName: name,
+            });
+        })
+        .then(() => {
+            alert("Registro exitoso. Ahora puedes iniciar sesión.");
+            window.location.href = "login.html";
+        })
+        .catch((error) => {
+            errorMessage.textContent = "Error: " + error.message;
+        });
 });
 
-// Controlador de inicio de sesión
-document.getElementById('login').addEventListener('click', async () => {
-    const email = document.getElementById('login-nickname').value;
-    const password = document.getElementById('login-password').value;
-
-    const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password
-    });
-
-    if (error) {
-        alert('Credenciales inválidas');
-    } else {
-        alert('Inicio de sesión exitoso');
-        window.location.href = 'juego.html';
-    }
-});
-
-// Función para cambiar el fondo
 const images = [
     'https://imperioinmobiliario.com.ar/pixlr-image-generator-e65dd46f-7f62-47ba-b30f-a9e5d01d8238.png',
     'https://imperioinmobiliario.com.ar/pixlr-image-generator-7b50e3dc-61f8-43ad-b4f6-517b6044d4f8.png',
@@ -80,17 +71,6 @@ async function checkAuth() {
 }
 
 // Llama a la función de verificación de autenticación al cargar la página
-if (window.location.pathname.endsWith('juego.html')) {
+if (window.location.pathname.endsWith('index.html')) {
     checkAuth();
 }
-
-// Controlador de cierre de sesión
-document.getElementById('logout').addEventListener('click', async () => {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-        alert('Error al cerrar sesión: ' + error.message);
-    } else {
-        alert('Sesión cerrada');
-        window.location.href = 'index.html';
-    }
-});
