@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador de Casas</title>
+    <!-- Enlazando los estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homdedesign.css">
+</head>
+<body>
+    <!-- Interfaz del juego -->
+    <div id="game-interface">
+        <div id="game-header">
+            <h1>Diseñador de Casas</h1>
+            <p>¡Construye tu casa soñada!</p>
+        </div>
+
+        <div id="navbar">
+            <div class="nav-item">Inicio</div>
+            <div class="nav-item">Construcción</div>
+            <div class="nav-item">Galería</div>
+        </div>
+
+        <div id="main-panel">
+            <div id="zones-panel">
+                <div id="zones-menu">
+                    <div class="zone-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Zona 1">
+                        <h2>Zona 1</h2>
+                        <h3>Descripción de la zona 1</h3>
+                    </div>
+                    <div class="zone-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Zona 2">
+                        <h2>Zona 2</h2>
+                        <h3>Descripción de la zona 2</h3>
+                    </div>
+                    <!-- Más tarjetas de zona pueden ser agregadas aquí -->
+                </div>
+            </div>
+        </div>
+
+        <div id="construction-panel" class="panel">
+            <h2>Panel de Construcción</h2>
+            <div id="construction-options">
+                <div class="construction-option">
+                    <img src="https://via.placeholder.com/100" alt="Opción 1">
+                    <h3>Opción 1</h3>
+                    <p>Detalles de la opción 1</p>
+                    <button class="construct">Construir</button>
+                    <button class="cancel">Cancelar</button>
+                </div>
+                <!-- Más opciones de construcción aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlazando los scripts JavaScript -->
+    <script src="app.js"></script>
+    <script src="fondo.js"></script>
+</body>
+</html>
