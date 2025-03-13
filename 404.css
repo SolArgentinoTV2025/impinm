@@ -8,6 +8,8 @@ body {
     transition: background-image 1s ease-in-out; /* Transición suave */
     font-family: 'Imperio Inmobiliario';
     color: #000;
+    object-fit: fill;
+    height: 69vh;
 }
 
 .error-container {
@@ -32,8 +34,8 @@ body {
 }
 
 .error-image {
-    width: 300px;
-    margin: 20px 0;
+    width: 50px;
+    margin: -19px 0;
 }
 
 .home-button {
