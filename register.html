@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Imperio Inmobiliario</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="registro.js"></script>
+    <link rel="stylesheet" href="reg_log_2025_I.css">
 </head>
 <body>
-    <div class="container">
+    <div class="form-container">
         <h2>Registro</h2>
-        <input type="text" id="name" placeholder="Nombre completo" required>
+        <input type="text" id="nickname" placeholder="Ingresa tu nickname" required>
         <input type="email" id="email" placeholder="Correo electrónico" required>
         <input type="password" id="password" placeholder="Contraseña" required>
         <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
-        <button id="register-button">Registrarse</button>
-        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
-        <p id="error-message"></p>
+        <button id="register">Registrarse</button>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+        <p id="error-message" class="error-message"></p>
     </div>
+
+    <script type="module" src="registro.js"></script>
 </body>
 </html>

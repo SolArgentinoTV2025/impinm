@@ -14,7 +14,6 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 document.getElementById("register").addEventListener("click", () => {
-    const name = document.getElementById("name").value;
     const nickname = document.getElementById("nickname").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -29,7 +28,7 @@ document.getElementById("register").addEventListener("click", () => {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             return updateProfile(userCredential.user, {
-                displayName: name,
+                displayName: nickname,
             });
         })
         .then(() => {

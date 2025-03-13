@@ -19,9 +19,9 @@ document.getElementById("login-button").addEventListener("click", () => {
     const errorMessage = document.getElementById("error-message");
 
     signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
+        .then(() => {
             alert("Inicio de sesión exitoso");
-            window.location.href = "dashboard.html"; // Redirigir a otra página después del login
+            window.location.href = "dashboard.html";
         })
         .catch((error) => {
             errorMessage.textContent = "Error: " + error.message;

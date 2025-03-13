@@ -1,0 +1,49 @@
+@import url('https://imperioinmobiliario.com.ar/fuentes/ImperioInmobiliario.css');
+
+body {
+    background-color: #ff4136; /* Rojo clásico de Monopoly */
+    font-family: 'ImperioInmobiliario', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.form-container {
+    background-color: #ffd700; /* Amarillo tipo tarjeta de propiedad */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #000;
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+}
