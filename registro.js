@@ -58,18 +58,3 @@ setInterval(changeBackground, 10000);
 
 // Inicializa la primera imagen
 changeBackground();
-
-// Controlador de la página `juego.html`
-async function checkAuth() {
-    const { data: session, error } = await supabase.auth.getSession();
-    if (error || !session) {
-        window.location.href = 'index.html';
-    } else {
-        document.getElementById('logout').style.display = 'block'; // Mostrar el botón de cerrar sesión
-    }
-}
-
-// Llama a la función de verificación de autenticación al cargar la página
-if (window.location.pathname.endsWith('index.html')) {
-    checkAuth();
-}
